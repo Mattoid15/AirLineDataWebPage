@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="JavaScript.js" type="text/javascript"></script>
+        <script src="YearScripts.js" type="text/javascript"></script>
+        <script src="HolidayScripts.js" type="text/javascript"></script>
+        <noscript>Sorry, your browser does not support JavaScript!</noscript>
+        <title>Air Travel Homepage</title>
+    </head>
+    <body>
+        <header style="text-align: center;">
+            <h1>Air Travel Data</h1>
+        </header>
+        <div class="tab">
+            <button class="tablinks" onclick="getHForm();">Holiday Form</button>
+            <button class="tablinks" onclick="getYForm();">Year Form</button>
+            <button class="tablinks" onclick="showCookies();">Show All Cookies</button>
+            <button class="tablinks" onclick="showSession();">Show Session Order</button>
+            <button class="tablinks" onclick="clearData();">Clear All Session Data</button>
+            <button class="tablinks" onclick="window.location.href='https://acad.kutztown.edu/~mling459/AirTravelData/'">Clear Screen</button>
+        </div>
+
+        <div id="FormArea" class="FormArea"></div>
+
+    </body>
+    <footer>
+        <div id="CookieArea"></div>
+        <div id="SessionArea"></div>
+        <div id="ClearArea"></div>
+        <div class="links">
+            <a href='https://acad.kutztown.edu/~mling459/csc521/site/apidocs/index.html'>JavaDoc Site</a>
+            <a href='https://acad.kutztown.edu/~mling459/AirTravelData/ReadMe.txt'>ReadMe</a>
+            <a href='https://www.transtats.bts.gov/Homepage.asp'>Bureau of Transportation Homepage</a>
+        </div>
+    </footer>
+</html>

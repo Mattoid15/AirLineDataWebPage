@@ -1,0 +1,151 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <display-name>Ajax From Remote Domain</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+
+    <!--***************************************************-->
+    <filter>
+        <filter-name>GetCities_Filter</filter-name>
+        <filter-class>MyPackage.WebConfig</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>GetCities_Filter</filter-name>
+        <url-pattern>/MyPackage.GetCities</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>GetCities</servlet-name>
+        <servlet-class>MyPackage.GetCities</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCities</servlet-name>
+        <url-pattern>/MyPackage.GetCities</url-pattern>
+    </servlet-mapping>
+    <!--***************************************************-->
+
+    <!--***************************************************-->
+    <filter>
+        <filter-name>ShowCities_Filter</filter-name>
+        <filter-class>MyPackage.WebConfig</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ShowCities_Filter</filter-name>
+        <url-pattern>/MyPackage.ShowCities</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>ShowCities</servlet-name>
+        <servlet-class>MyPackage.ShowCities</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowCities</servlet-name>
+        <url-pattern>/MyPackage.ShowCities</url-pattern>
+    </servlet-mapping>
+    <!--***************************************************-->
+
+    <!--***************************************************-->
+    <filter>
+        <filter-name>GetHoliday_Filter</filter-name>
+        <filter-class>MyPackage.WebConfig</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>GetHoliday_Filter</filter-name>
+        <url-pattern>/MyPackage.GetHoliday</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>GetHoliday</servlet-name>
+        <servlet-class>MyPackage.GetHoliday</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetHoliday</servlet-name>
+        <url-pattern>/MyPackage.GetHoliday</url-pattern>
+    </servlet-mapping>
+    <!--***************************************************-->
+
+    <!--***************************************************-->
+    <filter>
+        <filter-name>ShowHoliday_Filter</filter-name>
+        <filter-class>MyPackage.WebConfig</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ShowHoliday_Filter</filter-name>
+        <url-pattern>/MyPackage.ShowHoliday</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>ShowHoliday</servlet-name>
+        <servlet-class>MyPackage.ShowHoliday</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowHoliday</servlet-name>
+        <url-pattern>/MyPackage.ShowHoliday</url-pattern>
+    </servlet-mapping>
+    <!--***************************************************-->
+
+    <!--***************************************************-->
+    <filter>
+        <filter-name>GetYear_Filter</filter-name>
+        <filter-class>MyPackage.WebConfig</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>GetYear_Filter</filter-name>
+        <url-pattern>/MyPackage.GetYear</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>GetYear</servlet-name>
+        <servlet-class>MyPackage.GetYear</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetYear</servlet-name>
+        <url-pattern>/MyPackage.GetYear</url-pattern>
+    </servlet-mapping>
+    <!--***************************************************-->
+
+    <!--***************************************************-->
+    <filter>
+        <filter-name>ShowYear_Filter</filter-name>
+        <filter-class>MyPackage.WebConfig</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ShowYear_Filter</filter-name>
+        <url-pattern>/MyPackage.ShowYear</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>ShowYear</servlet-name>
+        <servlet-class>MyPackage.ShowYear</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowYear</servlet-name>
+        <url-pattern>/MyPackage.ShowYear</url-pattern>
+    </servlet-mapping>
+    <!--***************************************************-->
+
+    <!--***************************************************-->
+    <filter>
+        <filter-name>RemoveAllTables_Filter</filter-name>
+        <filter-class>MyPackage.WebConfig</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>RemoveAllTables_Filter</filter-name>
+        <url-pattern>/MyPackage.RemoveAllTables</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>RemoveAllTables</servlet-name>
+        <servlet-class>MyPackage.RemoveAllTables</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveAllTables</servlet-name>
+        <url-pattern>/MyPackage.RemoveAllTables</url-pattern>
+    </servlet-mapping>
+    <!--***************************************************-->
+</web-app>

@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 17px;
+    background-color: #c0efff;
+    font-family:verdana;
+}
+
+/* Style for the top navigation tab seciton */
+.tab {
+    display: flex;
+    overflow: hidden;
+    border: 1px solid #525252;
+    background-color: #d1f3ff;
+    justify-content: space-evenly;
+}
+  
+/* Style for the buttons in the tab section */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+  
+/* Changes the color of the buttons when hovering with the mouse */
+.tab button:hover {
+    background-color: #8ed4ee;
+}
+
+table, td {
+    background-color: rgb(249, 252, 253);
+    border: 1px solid black;
+    padding: 2px;
+}
+
+/* Creates 2 columns that float next to each other */
+nav {
+    float: left;
+    width: 40%;
+    padding-left: 5%;
+    text-align: center;
+}
+article {
+    float: left;
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+}
+
+.FormArea table {
+    border: none;
+    background-color: #c0efff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FormArea td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+/* Clears floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.links {
+    text-align: center;
+}
+.links a {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* Makes the 2 columns stack on top of each other instead of next to each other
+ * on smaller screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
